@@ -73,7 +73,7 @@ class Text extends AbstractRenderer
         );*/
 
 	    if (strtolower($style->direction) == 'rtl') {
-		    $Arabic = new \Dompdf\I18N\I18N_Arabic('Glyphs');
+		    $Arabic = new \App\Libraries\I18N\I18N_Arabic('Glyphs');
 		    $text = $Arabic->utf8Glyphs($text);
 	    }
 
