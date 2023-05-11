@@ -72,6 +72,12 @@ class Text extends AbstractRenderer
           $text
         );*/
 
+	    if (strtolower($style->direction) == 'rtl') {
+		    $Arabic = new \Dompdf\I18N\I18N_Arabic('Glyphs');
+		    $text = $Arabic->utf8Glyphs($text);
+	    }
+
+
         $this->_canvas->text($x, $y, $text,
             $font, $size,
             $style->color, $word_spacing, $letter_spacing);
