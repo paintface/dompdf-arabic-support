@@ -1,5 +1,5 @@
 {
-    "name": "paintface/dompdf",
+    "name": "paintface/dompdf-arabic-support",
     "type": "library",
     "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
     "license": "LGPL-2.1",
